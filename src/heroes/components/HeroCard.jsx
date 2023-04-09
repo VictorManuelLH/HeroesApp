@@ -1,5 +1,4 @@
 import { Link } from 'react-router-dom';
-import imgUrl from '../../../assets/heroes/dc-arrow.jpg'
 
 const CharactersByHero = ({ alter_ego, characters}) => {
     // if ( alter_ego === characters ) return (<></>);
@@ -19,10 +18,10 @@ export const HeroCard = ({
     characters ,
 }) => {
 
-    // const heroImageUrl = `./heroes/${ id }.jpg`;
-    const heroImageUrl = '../../../assets/heroes/dc-arrow.jpg';
+    const heroImageUrl = `/heroes/${ id }.jpg`;
 
     // const charactesByHero =  (<p>{ characters }</p>);
+
 
     return (
         <div className="col animate__animated animate__fadeIn">
@@ -31,14 +30,14 @@ export const HeroCard = ({
                 <div className="row no-gutters">
                     
                     <div className="col-4">
-                        <img src={ imgUrl } className="card-img" alt={ superhero } />
+                        <img src={ heroImageUrl } className="card-img" alt={ superhero } />
                     </div>
 
                     <div className="col-8">
 
                         <div className="card-body">
 
-                            <h5 className="card-title">{ superhero }aaa</h5>
+                            <h5 className="card-title">{ superhero }</h5>
                             <p className="card-text">{ alter_ego }</p>
 
                             {/* {
