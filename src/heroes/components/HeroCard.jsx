@@ -25,7 +25,7 @@ export const HeroCard = ({
 
 
     return (
-        <Link to={`./hero/${id}`} className="my-card">
+        <Link to={`/hero/${id}`} className="my-card">
             <img src={`/heroes/${ id }.jpg`} className="img img-responsive" alt={superhero}/>
             <div className="profile-name">{superhero}</div>
             <div className="profile-position">{alter_ego}</div>
