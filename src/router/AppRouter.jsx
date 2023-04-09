@@ -8,29 +8,29 @@ import { PublicRoute } from './PublicRoute';
 
 
 export const AppRouter = () => {
-  return (
-    <>
+    return (
+        <>
 
-        <Routes>
-            
-            {/* <Route path="login" element={<LoginPages />} /> */}
+            <Routes>
+                
+                {/* <Route path="login" element={<LoginPages />} /> */}
 
-            <Route path='/*' element={
-              <PrivateRoute>
-                <HeroesRoutes />
-              </PrivateRoute>
-            }/>
+                <Route path='/*' element={
+                    <PrivateRoute>
+                        <HeroesRoutes />
+                    </PrivateRoute>
+                }/>
 
-            <Route path='login' element={
-              <PublicRoute>
-                <LoginPages />
-              </PublicRoute>
-            }/>
-            
-            
+                <Route path='login' element={
+                    <PublicRoute>
+                        <LoginPages />
+                    </PublicRoute>
+                }/>
+                
+                
 
-        </Routes>
+            </Routes>
     
-    </>
-  )
+        </>
+    )
 }
